@@ -1,0 +1,177 @@
+<i2nsf-cfi-policy>
+  <name>Unique name for the policy</name>
+  <language>Optional language identifier</language>
+  <priority-usage>Optional priority usage</priority-usage>
+  <resolution-strategy>Optional resolution strategy</resolution-strategy>
+  <rules>
+    <name>Unique name for the rule</name>
+    <priority>Optional priority for the rule</priority>
+    <event>
+      <system-event>Optional system event</system-event>
+      <system-alarm>Optional system alarm</system-alarm>
+    </event>
+    <condition>
+      <firewall>
+        <source>Source address or criteria</source>
+        <destination>Destination address or criteria</destination>
+        <transport-layer-protocol>Optional protocol</transport-layer-protocol>
+        <range-port-number>
+          <start>Start port</start>
+          <end>End port</end>
+        </range-port-number>
+        <icmp>
+          <message>Optional ICMP message type</message>
+        </icmp>
+      </firewall>
+      <ddos>
+        <rate-limit>
+          <packet-rate-threshold>Optional packet rate threshold</packet-rate-threshold>
+          <byte-rate-threshold>Optional byte rate threshold</byte-rate-threshold>
+          <flow-rate-threshold>Optional flow rate threshold</flow-rate-threshold>
+        </rate-limit>
+      </ddos>
+      <anti-virus>
+        <profile>Optional antivirus profile</profile>
+        <exception-files>Optional exception files</exception-files>
+      </anti-virus>
+      <payload>
+        <content>Reference to payload content</content>
+      </payload>
+      <url-category>
+        <url-name>Reference to URL group name</url-name>
+      </url-category>
+      <voice>
+        <source-id>Reference to voice group source</source-id>
+        <destination-id>Reference to voice group destination</destination-id>
+        <user-agent>Optional user agent</user-agent>
+      </voice>
+      <context>
+        <time>
+          <start-date-time>Optional start date and time</start-date-time>
+          <end-date-time>Optional end date and time</end-date-time>
+          <period>
+            <start-time>Optional period start time</start-time>
+            <end-time>Optional period end time</end-time>
+            <day>Optional days</day>
+            <date>Optional dates</date>
+            <month>
+              <start>Start month</start>
+              <end>End month</end>
+            </month>
+          </period>
+          <frequency>Optional frequency</frequency>
+        </time>
+        <application>
+          <protocol>Optional application protocols</protocol>
+        </application>
+        <device-type>
+          <device>Optional device types</device>
+        </device-type>
+        <users>
+          <user>
+            <id>User ID</id>
+            <name>Optional user name</name>
+          </user>
+          <group>
+            <id>Group ID</id>
+            <name>Optional group name</name>
+          </group>
+        </users>
+        <geographic-location>
+          <source>
+            <country>Source country</country>
+            <region>Source region</region>
+            <city>Source city</city>
+          </source>
+          <destination>
+            <country>Destination country</country>
+            <region>Destination region</region>
+            <city>Destination city</city>
+          </destination>
+        </geographic-location>
+        <threat-feed>
+          <name>Threat feed name</name>
+        </threat-feed>
+      </context>
+    </condition>
+    <action>
+      <primary-action>
+        <action>Primary action</action>
+        <limit>Optional action limit</limit>
+      </primary-action>
+      <secondary-action>
+        <log-action>Optional log action</log-action>
+      </secondary-action>
+    </action>
+  </rules>
+  <endpoint-groups>
+    <user-group>
+      <name>User group name</name>
+      <mac-address>Optional MAC address</mac-address>
+      <ipv4>
+        <ipv4-prefix>Optional IPv4 prefix</ipv4-prefix>
+        <range-ipv4-address>
+          <start>Start IPv4 address</start>
+          <end>End IPv4 address</end>
+        </range-ipv4-address>
+      </ipv4>
+      <ipv6>
+        <ipv6-prefix>Optional IPv6 prefix</ipv6-prefix>
+        <range-ipv6-address>
+          <start>Start IPv6 address</start>
+          <end>End IPv6 address</end>
+        </range-ipv6-address>
+      </ipv6>
+    </user-group>
+    <device-group>
+      <name>Device group name</name>
+      <application-protocol>Optional application protocol</application-protocol>
+      <ipv4>
+        <ipv4-prefix>Optional IPv4 prefix</ipv4-prefix>
+        <range-ipv4-address>
+          <start>Start IPv4 address</start>
+          <end>End IPv4 address</end>
+        </range-ipv4-address>
+      </ipv4>
+      <ipv6>
+        <ipv6-prefix>Optional IPv6 prefix</ipv6-prefix>
+        <range-ipv6-address>
+          <start>Start IPv6 address</start>
+          <end>End IPv6 address</end>
+        </range-ipv6-address>
+      </ipv6>
+    </device-group>
+    <location-group>
+      <country>Country name</country>
+      <region>Region name</region>
+      <city>City name</city>
+      <ipv4>
+        <ipv4-prefix>Optional IPv4 prefix</ipv4-prefix>
+        <range-ipv4-address>
+          <start>Start IPv4 address</start>
+          <end>End IPv4 address</end>
+        </range-ipv4-address>
+      </ipv4>
+      <ipv6>
+        <ipv6-prefix>Optional IPv6 prefix</ipv6-prefix>
+        <range-ipv6-address>
+          <start>Start IPv6 address</start>
+          <end>End IPv6 address</end>
+        </range-ipv6-address>
+      </ipv6>
+    </location-group>
+    <url-group>
+      <name>URL group name</name>
+      <url>URL</url>
+    </url-group>
+    <voice-group>
+      <name>Voice group name</name>
+      <sip-id>SIP ID</sip-id>
+    </voice-group>
+  </endpoint-groups>
+  <threat-prevention>
+    <name>Threat prevention name</name>
+    <ioc>Indicator of compromise</ioc>
+    <format>Optional format</format>
+  </threat-prevention>
+</i2nsf-cfi-policy>
