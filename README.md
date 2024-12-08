@@ -8,7 +8,7 @@ This repository contains the implementation of an AI-driven solution to automate
 - **Natural Language to XML Translation**: Converts user-friendly policy descriptions into structured XML policies.
 - **I2NSF Compliance**: Generates policies following the I2NSF Consumer-Facing Interface schema.
 - **Ease of Use**: Enables non-technical users to define high-level security policies.
-- **Event-Condition-Action Model**: Supports defining conditions (e.g., time, URL categories) and actions (e.g., blocking or allowing traffic).
+- **Event-Condition-Action Model**: Supports defining events (system-events, system-alarms), conditions (e.g., time, URL categories) and actions (e.g., blocking or allowing traffic).
 
 ## System Architecture
 The implementation leverages the following key components:
