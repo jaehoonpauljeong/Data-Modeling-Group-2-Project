@@ -64,8 +64,7 @@ Generated Output:
 ### Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/automated-security-policy-gen.git
-   cd automated-security-policy-gen
+   git clone https://github.com/jaehoonpauljeong/Data-Modeling-Group-2-Project
    ```
 2. Install dependencies:
    ```bash
