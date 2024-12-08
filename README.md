@@ -16,7 +16,7 @@ The implementation leverages the following key components:
 2. **Prompt Engineering**: Utilizes a tailored prompt to guide the GPT-4o-mini model in generating XML outputs compliant with the I2NSF schema.
 3. **YANG Data Model Integration**: Incorporates the standardized Consumer-Facing Interface schema to ensure output interoperability and consistency.
 
-![System Diagram](path/to/system_diagram.png)
+![System Diagram](images/diagram.png)
 
 ## Example
 Input: _"Block SNS access during office hours with a weekly frequency (9am-5pm; Monday-Friday)."_
