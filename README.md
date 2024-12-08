@@ -73,8 +73,9 @@ Generated Output:
 
 ### Usage
 1. Open the Jupyter Notebook `natural-language-to-security-policy.ipynb`.
-2. Replace the OpenAI API key placeholder with your key.
-3. Input your desired policy descriptions and run the cells to generate XML policies.
+2. *IMPORTANT*: This notebook has been implemented in Kaggle, modifications for different environments may be required.
+3. Replace the OpenAI API key placeholder with your key.
+4. Input your desired policy descriptions and run the cells to generate XML policies.
 
 ## Project Structure
 - **`natural-language-to-security-policy.ipynb`**: Main implementation notebook.
