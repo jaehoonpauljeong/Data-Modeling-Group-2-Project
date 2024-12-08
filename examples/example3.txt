@@ -1,0 +1,49 @@
+INPUT: "Block packets coming from Buenos Aires, Argentina but allow packets coming from Lima, Peru."
+
+Generated XML Policy:
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<i2nsf-cfi-policy
+    xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cfi-policy">
+    <name>block_packets_buenos_aires_allow_lima</name>
+    <rules>
+        <name>block_buenos_aires_packets</name>
+        <condition>
+            <firewall>
+                <source>
+                    <geographic-location>
+                        <source>
+                            <country>Argentina</country>
+                            <city>Buenos Aires</city>
+                        </source>
+                    </geographic-location>
+                </source>
+            </firewall>
+        </condition>
+        <action>
+            <primary-action>
+                <action>drop</action>
+            </primary-action>
+        </action>
+    </rules>
+    <rules>
+        <name>allow_lima_packets</name>
+        <condition>
+            <firewall>
+                <source>
+                    <geographic-location>
+                        <source>
+                            <country>Peru</country>
+                            <city>Lima</city>
+                        </source>
+                    </geographic-location>
+                </source>
+            </firewall>
+        </condition>
+        <action>
+            <primary-action>
+                <action>allow</action>
+            </primary-action>
+        </action>
+    </rules>
+</i2nsf-cfi-policy>

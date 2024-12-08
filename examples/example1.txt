@@ -1,0 +1,34 @@
+INPUT: "Block SNS access during office hours with a weekly frequency (9am-5pm; Monday-Friday)"
+
+Generated XML Policy:
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<i2nsf-cfi-policy
+    xmlns="urn:ietf:params:xml:ns:yang:ietf-i2nsf-cfi-policy">
+    <name>block_sns_access_during_office_hours</name>
+    <rules>
+        <name>block_sns_access</name>
+        <condition>
+            <time>
+                <frequency>weekly</frequency>
+                <period>
+                    <start-time>09:00</start-time>
+                    <end-time>17:00</end-time>
+                    <day>Monday</day>
+                    <day>Tuesday</day>
+                    <day>Wednesday</day>
+                    <day>Thursday</day>
+                    <day>Friday</day>
+                </period>
+            </time>
+            <url-category>
+                <url-name>SNS</url-name>
+            </url-category>
+        </condition>
+        <actions>
+            <primary-action>
+                <action>drop</action>
+            </primary-action>
+        </actions>
+    </rules>
+</i2nsf-cfi-policy>
