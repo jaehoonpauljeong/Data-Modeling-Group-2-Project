@@ -81,6 +81,7 @@ Generated Output:
 - **`natural-language-to-security-policy.ipynb`**: Main implementation notebook.
 - **`README.md`**: Documentation of the project.
 - **`examples/`**: Directory containing example input and output policies.
+- **`playground/fewshot_experiments.ipynb`**: Additional implementation using prompt selector.
 - **`requirements.txt`**: Python dependencies.
 
 ## Contributing
